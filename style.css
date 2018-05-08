@@ -43,6 +43,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #FFD700;
 }
 
 .photo {
@@ -76,9 +77,10 @@ h1, h2 , h3 , h4 {
 
 
 .pointer {cursor: pointer;}
+
 #card1 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -87,7 +89,7 @@ h1, h2 , h3 , h4 {
 
 #card2 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -95,7 +97,7 @@ h1, h2 , h3 , h4 {
 }
 #card3 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -104,7 +106,7 @@ h1, h2 , h3 , h4 {
 
 #card4 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -113,7 +115,7 @@ h1, h2 , h3 , h4 {
 
 #card5 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -122,7 +124,7 @@ h1, h2 , h3 , h4 {
 
 #card6 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -131,7 +133,7 @@ h1, h2 , h3 , h4 {
 
 #card7 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -140,7 +142,7 @@ h1, h2 , h3 , h4 {
 
 #card8 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -149,7 +151,7 @@ h1, h2 , h3 , h4 {
 
 #card9 {
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 1em;
   border: solid;
   border-style: groove;
@@ -165,4 +167,148 @@ h1, h2 , h3 , h4 {
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        /* Sets default font-size to 16px, ensuring 1em = 16px; */
+        font-size: 16px;
+    }
+
+    #banner {
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll;
+        /* top: 0;
+        bottom: 0; */
+        border: solid;
+        border-width: inherit;
+        background-color: #FFD700;
+        text-decoration-color: white;
+    }
+
+    #share-buttons {
+      position: fixed;
+        width: 200px;
+        overflow-y: scroll;
+        top: 30%;
+        bottom: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #FFD700;
+    }
+
+    .photo {
+      display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 80px;
+    }
+
+    h1, h2 , h3 , h4 {
+      text-align: center;
+    }
+
+    .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 1em;
+        width: 50%;
+        /* background-color: rgba(255, 99, 71, 0.4) */
+    }
+
+
+    .front {
+      padding: 1em;
+    }
+
+    .back {
+      padding: 1em;
+    }
+
+
+    .pointer {cursor: pointer;}
+
+    #card1 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card2 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    #card3 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card4 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card5 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card6 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card7 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card8 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    #card9 {
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 1em;
+      border: solid;
+      border-style: groove;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
 }
