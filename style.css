@@ -42,7 +42,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
     border-radius: 10px;
 
-    widht: 100%;
+    width: 100%;
     transform-style: preserve-3d;
 }
 
@@ -64,7 +64,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 .front
 {
     color: #fff;
-    background: #2196f3;
+    background: #FF614E;
 }
 
 .back
@@ -75,8 +75,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
     transform: rotateY(180deg);
 
-    color: #2196f3;
-    background: #fff;
+    color: #FF614E;
+    background: #E0E0E0;
 }
 /* Above is new code */
 
@@ -106,6 +106,7 @@ html, body {
     border-width: inherit;
     background-color: #FFD700;
     text-decoration-color: white;
+    z-index: 100;
 }
 
 #share-buttons {
@@ -155,7 +156,7 @@ h1 {
 }
 
 .container {
-    max-width: 980px;
+    /* max-width: 480px; */
     margin: 0 auto;
     padding: 1em;
     width: 86%;
@@ -163,11 +164,11 @@ h1 {
 }
 
 .front {
-  padding: 1em;
+  padding: 2em;
 }
 
 .back {
-  padding: 1em;
+  padding: 2em;
 }
 
 
@@ -237,7 +238,7 @@ h1 {
 
 #card8 {
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 1em;
   /* border: solid;
   border-style: groove;
@@ -246,7 +247,7 @@ h1 {
 
 #card9 {
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 1em;
   /* border: solid;
   border-style: groove;
@@ -254,9 +255,12 @@ h1 {
 }
 /* Tablet/Desktop overrides */
 
-@media(min-width: 681px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+/* (min-width: 681px) { */
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    #share-buttons {
+    /* #share-buttons {
       position: fixed;
         width: 10%;
         overflow-y: scroll;
@@ -266,7 +270,25 @@ h1 {
         margin-right: auto;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #FFD700;
+    } */
+
+
+    .container {
+        max-width: 728px;
+        margin: 0 auto;
+        padding: 1em;
+        width: 86%;
+        /* background-color: rgba(255, 99, 71, 0.4) */
     }
+
+    .front {
+      padding: 2em;
+    }
+
+    .back {
+      padding: 2em;
+    }
+
 }
 
 @media(min-width: 729px) {
@@ -292,7 +314,7 @@ h1 {
         text-decoration-color: white;
     }
 
-    #share-buttons {
+    /* #share-buttons {
       position: fixed;
         width: 200px;
         overflow-y: scroll;
@@ -302,7 +324,7 @@ h1 {
         margin-right: auto;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #FFD700;
-    }
+    } */
 
     .photo {
       display: block;
@@ -323,96 +345,4 @@ h1 {
         width: 50%;
         /* background-color: rgba(255, 99, 71, 0.4) */
     }
-
-
-    .front {
-      padding: 1em;
-    }
-
-    .back {
-      padding: 1em;
-    }
-
-
-    .pointer {cursor: pointer;}
-
-    #card1 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card2 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-    #card3 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card4 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card5 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card6 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card7 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card8 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    #card9 {
-      margin: auto;
-      margin-bottom: 15px;
-      padding: 1em;
-      border: solid;
-      border-style: groove;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-}
+  }
