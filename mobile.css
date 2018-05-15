@@ -1,238 +1,225 @@
-# Mobile First CSS template
 
-write out a lesson that explains the full template below.
-
-```css
-/*
-=======================================
-MOBILE FIRST WEB DESIGN
-Use these industry standard breakpoints
-to build responsive web pages and sites.
-Style layouts for small screens first,
-then add complexity for larger screens.
-=======================================
-*/
-
-/* Use this standard to ensure that
-   all browsers have the same base styles */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+#banner {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    /* top: 0;
+    bottom: 0; */
+    border: solid;
+    border-width: inherit;
+    background-color: #FFD700;
+    text-decoration-color: white;
+    z-index: 100;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+    /* width: 86%; */
+    /* background-color: rgba(255, 99, 71, 0.4) */
+}
+
+/* Below is new code */
+.card-container
+{
+    font-family: 'Open Sans', sans serif;
+    font-size: 120px;
+    font-weight: bold;
+
+    width: 400px;
+    height: 250px;
+    margin: 80px auto;
+
+    border-radius: 10px;
+
+    perspective: 1400px;
+}
+
+.card
+{
+    position: relative;
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back
+{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.front
+{
+    color: #fff;
+    background: #FF614E;
+}
+
+.back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: rotateY(180deg);
+
+    color: #FF614E;
+    background: #E0E0E0;
+}
+/* Above is new code */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.photo {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+
+ h2 , h3 , h4 {
+  text-align: center;
+}
+
+.container {
+    /* max-width: 480px; */
+    margin: 0 auto;
+    padding: 1em;
+    width: 86%;
+    /* background-color: rgba(255, 99, 71, 0.4) */
+}
+
+.front {
+  padding: 2em;
+}
+
+.back {
+  padding: 2em;
+}
+
+
+.pointer {cursor: pointer;}
+
+#card1 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card2 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+#card3 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card4 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card5 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card6 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card7 {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card8 {
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+#card9 {
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 1em;
+  /* border: solid;
+  border-style: groove;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
 
 /* Smartphones at vertical portrait orientation */
 @media only screen and (max-width: 320px) {
    /* Enter universal style rules first,
    plus rules for Smartphones at vertical portrait orientation
    i.e. less than (and up to) 320px wide */
-   * {
-       box-sizing: border-box;
-   }
-
-   html, body {
-       /* Sets default font-size to 16px, ensuring 1em = 16px; */
-       font-size: 16px;
-   }
-
-   #banner {
-       position: fixed;
-       width: 100%;
-       overflow-y: scroll;
-       /* top: 0;
-       bottom: 0; */
-       border: solid;
-       border-width: inherit;
-       background-color: #FFD700;
-       text-decoration-color: white;
-       z-index: 100;
-   }
-
-   .container {
-       margin: 0 auto;
-       padding: 1em;
-       /* width: 86%; */
-       /* background-color: rgba(255, 99, 71, 0.4) */
-   }
-
-   /* Below is new code */
-   .card-container
-   {
-       font-family: 'Open Sans', sans serif;
-       font-size: 120px;
-       font-weight: bold;
-
-       width: 400px;
-       height: 250px;
-       margin: 80px auto;
-
-       border-radius: 10px;
-
-       perspective: 1400px;
-   }
-
-   .card
-   {
-       position: relative;
-
-       height: 100%;
-
-       border-radius: 10px;
-
-       width: 100%;
-       transform-style: preserve-3d;
-   }
-
-   .front,
-   .back
-   {
-       display: flex;
-
-       width: 100%;
-       height: 100%;
-
-       border-radius: 10px;
-
-       justify-content: center;
-       align-items: center;
-       backface-visibility: hidden;
-   }
-
-   .front
-   {
-       color: #fff;
-       background: #FF614E;
-   }
-
-   .back
-   {
-       position: absolute;
-       top: 0;
-       left: 0;
-
-       transform: rotateY(180deg);
-
-       color: #FF614E;
-       background: #E0E0E0;
-   }
-   /* Above is new code */
-   img {
-     width: 100%;
-     height: auto;
-   }
-
-   .photo {
-     display: block;
-       margin-left: auto;
-       margin-right: auto;
-       width: 100%;
-       padding-top: 60px;
-   }
-
-   h1 {
-     text-align: center;
-     letter-spacing: 3px;
-   }
-
-
-    h2 , h3 , h4 {
-     text-align: center;
-   }
-
-   .container {
-       /* max-width: 480px; */
-       margin: 0 auto;
-       padding: 1em;
-       width: 86%;
-       /* background-color: rgba(255, 99, 71, 0.4) */
-   }
-
-   .front {
-     padding: 2em;
-   }
-
-   .back {
-     padding: 2em;
-   }
-
-
-   .pointer {cursor: pointer;}
-
-   #card1 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card2 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-   #card3 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card4 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card5 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card6 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card7 {
-     margin: auto;
-     margin-bottom: 15px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card8 {
-     margin: auto;
-     margin-bottom: 25px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
-
-   #card9 {
-     margin: auto;
-     margin-bottom: 25px;
-     padding: 1em;
-     /* border: solid;
-     border-style: groove;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-   }
 
 }
 
@@ -240,12 +227,21 @@ then add complexity for larger screens.
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     /* Now enter styles for Smartphones at horizontal orientation
     i.e. between 321px and 480px wide*/
+
 }
 
 /* Tablets at vertical portrait width */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     /* Enter style rules for Tablets at vertical portrait orientation
     i.e. between 481px and 768px wide */
+    .container {
+        /* max-width: 480px; */
+        margin: 0 auto;
+        padding: 1em;
+        /* width: 86%; */
+        width: 60%;
+        /* background-color: rgba(255, 99, 71, 0.4) */
+    }
 }
 
 /* Tablets at horizontal landscape width */
@@ -258,6 +254,13 @@ then add complexity for larger screens.
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     /* Enter style rules for small laptops
     i.e. between 993px and 1200px wide */
+    .container {
+        margin: 0 auto;
+        padding: 1em;
+        width: 50%;
+        /* background-color: rgba(255, 99, 71, 0.4) */
+    }
+
 }
 
 /* Large desktop monitors */
