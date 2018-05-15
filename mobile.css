@@ -35,6 +35,16 @@ html, body {
   padding-left: 3px;
 }
 
+.firstcharacter2 {
+  color: gold;
+  float: left;
+  /* font-family: Georgia; */
+  font-size: 20px;
+  line-height: 10px;
+  /* padding-top: 4px; */
+  padding-right: 4px;
+}
+
 .container {
     margin: 0 auto;
     padding: 1em;
