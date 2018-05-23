@@ -267,7 +267,7 @@ h1 {
 
     #share-buttons {
       position: fixed;
-        width: 10%;
+        width: 6%;
         overflow-y: scroll;
         top: 30%;
         bottom: 47%;
@@ -284,7 +284,7 @@ h1 {
     i.e. between 769px and 992px wide */
     #share-buttons {
       position: fixed;
-        width: 10%;
+        width: 4%;
         overflow-y: scroll;
         top: 30%;
         bottom: 47%;
@@ -314,7 +314,7 @@ h1 {
     }
     #share-buttons {
       position: fixed;
-        width: 10%;
+        width: 4%;
         overflow-y: scroll;
         top: 30%;
         bottom: 47%;
@@ -330,7 +330,7 @@ h1 {
     i.e. 1201px wide and above */
     #share-buttons {
       position: fixed;
-        width: 10%;
+        width: 4%;
         overflow-y: scroll;
         top: 30%;
         bottom: 47%;
